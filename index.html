@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ATM Menu</h1>
+        <div id="menu">
+            <button onclick="showBalance()">Balance Inquiry</button>
+            <button onclick="showDeposit()">Deposit</button>
+            <button onclick="showWithdrawal()">Withdrawal</button>
+            <button onclick="exitATM()">Exit</button>
+        </div>
+
+        <div id="display">
+            <p>Welcome to the ATM</p>
+        </div>
+
+        <div id="deposit-section" class="transaction-section">
+            <h2>Deposit Money</h2>
+            <input type="number" id="deposit-amount" placeholder="Enter amount to deposit">
+            <button onclick="deposit()">Deposit</button>
+            <button onclick="backToMenu()">Back to Menu</button>
+        </div>
+
+        <div id="withdrawal-section" class="transaction-section">
+            <h2>Withdraw Money</h2>
+            <input type="number" id="withdraw-amount" placeholder="Enter amount to withdraw">
+            <button onclick="withdraw()">Withdraw</button>
+            <button onclick="backToMenu()">Back to Menu</button>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 Banking System. All rights reserved to Pasam Pavan Sai.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
